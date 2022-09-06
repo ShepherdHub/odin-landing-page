@@ -1,9 +1,190 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f9faf8;
+}
+
+body {
+  height: 100vh;
   margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+header,
+footer,
+.dark {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.light {
+  background-color: #f9faf8;
+}
+
+.gray {
+  background-color: #e5e7eb;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.hero {
+  padding: 72px 0;
+  display: flex;
+}
+
+.hero-left,
+.hero-right {
+  width: 50%;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+  margin-bottom: 16px;
+}
+
+.subtext {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 16px;
+  padding-right: 24px;
+}
+
+.header-links {
+  display: flex;
+  gap: 32px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.btn {
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #3881f6;
+  color: #f9faf8;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #3881f6;
+  color: #f9faf8;
+}
+
+.btn-primary:hover {
+  background-color: #2e67c2;
+}
+
+.btn-border {
+  border: 2px solid #f9faf8;
+}
+
+.quote {
+  color: #1f2937;
+  padding: 124px 48px;
+}
+
+.quote blockquote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.quote figcaption {
+  text-align: right;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.cta {
+  margin: 72px auto;
+  background-color: #3881f6;
+  color: #f9faf8;
+  border-radius: 8px;
+  padding: 48px 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  padding: 48px 48px 96px 48px;
+  text-align: center;
+  color: #1f2937;
+}
+
+.info h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 48px;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-box {
+  width: 156px;
+  height: 156px;
+  border: 3px solid #3881f6;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.info-text {
+  width: 156px;
+  text-align: center;
 }
